@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M1-BugTracker", "M1-BugTracker\", "{0894B088-B69B-4BF7-8474-77477EB82E15}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62778"
+		Debug.AspNetCompiler.PhysicalPath = "M1-BugTracker\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62778\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62778"
+		Release.AspNetCompiler.PhysicalPath = "M1-BugTracker\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62778\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62778"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M2-BugTracker", "M2-BugTracker\", "{C878F8BC-AC0F-4D0B-A8D1-62ECA5C4F116}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62791"
+		Debug.AspNetCompiler.PhysicalPath = "M2-BugTracker\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62791\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62791"
+		Release.AspNetCompiler.PhysicalPath = "M2-BugTracker\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62791\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62791"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M3-BugTracker", "M3-BugTracker\", "{C3BE83D1-452B-4798-A954-9E3FD056FDAA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62794"
+		Debug.AspNetCompiler.PhysicalPath = "M3-BugTracker\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62794\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62794"
+		Release.AspNetCompiler.PhysicalPath = "M3-BugTracker\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62794\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62794"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M4-BugTracker", "M4-BugTracker\", "{9A29BA03-37C6-4228-8640-450006538DB6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62803"
+		Debug.AspNetCompiler.PhysicalPath = "M4-BugTracker\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62803\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62803"
+		Release.AspNetCompiler.PhysicalPath = "M4-BugTracker\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62803\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62803"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M5-BugTracker", "M5-BugTracker\", "{D61DBCB0-D3C9-4BD6-961E-2B9DAFF15250}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62804"
+		Debug.AspNetCompiler.PhysicalPath = "M5-BugTracker\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62804\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62804"
+		Release.AspNetCompiler.PhysicalPath = "M5-BugTracker\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62804\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62804"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0894B088-B69B-4BF7-8474-77477EB82E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0894B088-B69B-4BF7-8474-77477EB82E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C878F8BC-AC0F-4D0B-A8D1-62ECA5C4F116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C878F8BC-AC0F-4D0B-A8D1-62ECA5C4F116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3BE83D1-452B-4798-A954-9E3FD056FDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3BE83D1-452B-4798-A954-9E3FD056FDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A29BA03-37C6-4228-8640-450006538DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A29BA03-37C6-4228-8640-450006538DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61DBCB0-D3C9-4BD6-961E-2B9DAFF15250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61DBCB0-D3C9-4BD6-961E-2B9DAFF15250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
