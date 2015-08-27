@@ -143,8 +143,6 @@ publish/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
 
-wwwroot/lib/
-
 # Windows Azure Build Output
 csx/
 *.build.csdef
@@ -164,6 +162,7 @@ ClientBin/
 *.publishsettings
 node_modules/
 bower_components/
+wwwroot/lib/
 
 # RIA/Silverlight projects
 Generated_Code/
