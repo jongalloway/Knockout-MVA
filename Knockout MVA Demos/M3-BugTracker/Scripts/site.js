@@ -26,6 +26,16 @@ var AppViewModel = function () {
 		self.bugs.unshift(self.currentBug());
 		self.currentBug(new Bug());
 	}
+
+	ko.components.register('display-developers', {
+		viewModel: function (params) {
+			this.developers = params.developers;
+		},
+		template: 
+			'<ul data-bind="foreach: developers" class="list-group">\
+				<li class="list-group-item btn" data-bind="text: fullName, click: $root.modifyDeveloper"></li>\
+			</ul>'
+	});
 }
 
 // Bind up the view model

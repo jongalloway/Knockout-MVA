@@ -34,9 +34,11 @@
 					<button type="submit" class="btn">Save developer</button>
 				</form>
 
-				<ul data-bind="foreach: developers" class="list-group">
-					<li class="list-group-item btn" data-bind="text: fullName, click: $root.modifyDeveloper"></li>
-				</ul>
+				<!--<ul data-bind="template: {name: 'developer-display', foreach: developers }" class="list-group">
+				</ul>-->
+
+<!--				<div data-bind="component: { name: 'display-developers', params: { developers: developers }}"></div>-->
+				<display-developers params="developers: developers"></display-developers>
 			</div>
 
 			<!-- bug form -->
@@ -69,9 +71,12 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="Scripts/knockout-3.3.0.js"></script>
 	<script src="Scripts/models.js"></script>
 	<script src="Scripts/site.js"></script>
+
+	<script type="text/html" id="developer-display">
+		<li class="list-group-item btn" data-bind="text: fullName, click: $root.modifyDeveloper"></li>
+	</script>
 </body>
 </html>
