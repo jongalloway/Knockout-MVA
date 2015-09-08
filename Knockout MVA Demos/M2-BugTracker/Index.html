@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+
+	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+	<style>
+		.blue {
+			color: blue;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- developer form-->
+			<div class="col-sm-6">
+				<form data-bind="submit: saveDeveloper" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-md-3 control-label">First name:</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value: currentDeveloper().firstName" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">Last name:</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value: currentDeveloper().lastName" />
+						</div>
+					</div>
+					<button type="submit" class="btn">Save developer</button>
+				</form>
+
+				<ul data-bind="foreach: developers" class="list-group">
+					<li class="list-group-item btn" data-bind="text: fullName, click: $root.modifyDeveloper"></li>
+				</ul>
+			</div>
+
+			<!-- bug form -->
+			<div class="col-sm-6">
+				<form data-bind="submit: saveBug, with: currentBug" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-md-3 control-label">Description:</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value: description" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">Status:</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value: status" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">Developer:</label>
+						<div class="col-md-9">
+							<select class="form-control" data-bind="options: $root.developers, optionsText: 'fullName', optionsCaption: 'Please choose a developer'"></select>
+						</div>
+					</div>
+					<button type="submit" class="btn">Save bug</button>
+				</form>
+
+				<ul data-bind="foreach: bugs" class="list-group">
+					<li class="list-group-item" data-bind="text: description"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="Scripts/knockout-3.3.0.js"></script>
+	<script src="Scripts/models.js"></script>
+	<script src="Scripts/site.js"></script>
+</body>
+</html>
