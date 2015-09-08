@@ -8,7 +8,7 @@ var Developer = function (first, last) {
 
     self.fullName = ko.pureComputed(function () {
         return self.firstName() + " " + self.lastName();
-    }, self);
+    });
 };
 
 var Bug = function () {
@@ -22,5 +22,5 @@ var Bug = function () {
 var Project = function () {
     var self = this;
     self.name = ko.observable();
-    self.bugs = ko.observableArray([new Bug()]);
+    self.bugs = ko.observableArray([]);
 }
