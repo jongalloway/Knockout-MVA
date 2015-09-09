@@ -11,53 +11,53 @@
 		<div class="row">
 			<!-- developer form-->
 			<div class="col-sm-6">
-				<form data-bind="submit: saveDeveloper" class="form-horizontal">
+				<form class="form-horizontal">
 					<div class="form-group">
 						<label class="col-md-3 control-label">First name:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: currentDeveloper().firstName" />
+							<input type="text" class="form-control" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Last name:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: currentDeveloper().lastName" />
+							<input type="text" class="form-control" />
 						</div>
 					</div>
 					<button type="submit" class="btn">Save developer</button>
 				</form>
 
 				<ul data-bind="foreach: developers" class="list-group">
-					<li class="list-group-item btn" data-bind="text: fullName, click: $root.modifyDeveloper"></li>
+					<li class="list-group-item btn"></li>
 				</ul>
 			</div>
 
 			<!-- bug form -->
 			<div class="col-sm-6">
-				<form data-bind="submit: saveBug, with: currentBug" class="form-horizontal">
+				<form class="form-horizontal">
 					<div class="form-group">
 						<label class="col-md-3 control-label">Description:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: description" />
+							<input type="text" class="form-control" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Status:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: status" />
+							<input type="text" class="form-control" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Developer:</label>
 						<div class="col-md-9">
-							<select class="form-control" data-bind="options: $root.developers, optionsText: 'fullName', optionsCaption: 'Please choose a developer'"></select>
+							<select class="form-control"></select>
 						</div>
 					</div>
 					<button type="submit" class="btn">Save bug</button>
 				</form>
 
 				<ul data-bind="foreach: bugs" class="list-group">
-					<li class="list-group-item" data-bind="text: description"></li>
+					<li class="list-group-item"></li>
 				</ul>
 			</div>
 		</div>
