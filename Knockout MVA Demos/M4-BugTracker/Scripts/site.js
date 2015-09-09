@@ -1,4 +1,4 @@
-﻿/// <reference path="models.js" />
+/// <reference path="models.js" />
 /// <reference path="jquery-2.1.4.js" />
 
 var serviceRoot = 'http://localhost:55555';
@@ -12,23 +12,24 @@ var AppViewModel = function () {
 	self.isModifyDeveloper = false;
 	self.currentDeveloper = ko.observable(new Developer());
 	self.saveDeveloper = function () {
+	    var id = self.currentDeveloper().id;
+	    var updateData = ko.toJSON(self.currentDeveloper);
+	    if (self.isModifyDeveloper) {
+	        $.ajax({
+	            method: "PUT",
+	            url: serviceRoot + '/api/developers/' + id,
+	            data: ko.toJSON(self.currentDeveloper)
+	        });
+	    } else {
+	        $.post(serviceRoot + '/api/developers', ko.toJSON(self.currentDeveloper));
+	    }
+
 		// add developer
 		if(!self.isModifyDeveloper) self.developers.unshift(self.currentDeveloper());
-		// reset developer
+
+	    // reset developer
 		self.currentDeveloper(new Developer());
 		self.isModifyDeveloper = false;
-
-		var id = self.currentDeveloper().id;
-		if (Math.floor(id) === id) {
-		    // Valid integer ID - this is an update
-		    $.ajax({
-		        method: "PUT",
-		        url: serviceRoot + '/api/developers/' + id,
-		        data: ko.toJSON(self.currentDeveloper)
-		    });
-		} else {
-		    $.post(serviceRoot + '/api/developers', ko.toJSON(self.currentDeveloper));
-		}
 	}
 	self.modifyDeveloper = function(developer) {
 		// developer will automatically be the one the user clicked on
@@ -38,20 +39,20 @@ var AppViewModel = function () {
 
 	self.currentBug = ko.observable(new Bug());
 	self.saveBug = function () {
-		self.bugs.unshift(self.currentBug());
-		self.currentBug(new Bug());
+	    var id = self.currentBug().id;
+	    if (Math.floor(id) === id) {
+	        // Valid integer ID - this is an update
+	        $.ajax({
+	            method: "PUT",
+	            url: serviceRoot + '/api/bugs/' + id,
+	            data: ko.toJSON(self.currentBug)
+	        });
+	    } else {
+	        $.post(serviceRoot + '/api/bugs', ko.toJSON(self.currentBug));
+	    }
 
-		var id = self.currentBug().id;
-		if (Math.floor(id) === id) {
-		    // Valid integer ID - this is an update
-		    $.ajax({
-		        method: "PUT",
-		        url: serviceRoot + '/api/bugs/' + id,
-		        data: ko.toJSON(self.currentBug)
-		    });
-		} else {
-		    $.post(serviceRoot + '/api/bugs', ko.toJSON(self.currentBug));
-		}
+	    self.bugs.unshift(self.currentBug());
+		self.currentBug(new Bug());
 	}
 
 	ko.components.register('display-developers', {
