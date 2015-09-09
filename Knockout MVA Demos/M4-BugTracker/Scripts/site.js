@@ -1,5 +1,7 @@
 ﻿/// <reference path="models.js" />
 /// <reference path="jquery-2.1.4.js" />
+/// <reference path="jquery.signalR-2.2.0.js" />
+
 
 var serviceRoot = 'http://localhost:55555';
 
@@ -82,6 +84,19 @@ var AppViewModel = function () {
 	self.toggleDebug = function () {
 	    self.showDebug(!self.showDebug());
 	};
+
+	//self.developerHub = $.connection.developerHub;
+
+	//self.developerHub.client.developerAdded = function (developer) {
+	//	console.log('here');
+	//	self.developers.shift(new Developer(developer.firstName, developer.lastName, developer.id));
+	//	self.currentDeveloper(new Developer());
+	//}
+	//$.connection.hub.start();
+
+	//self.saveDeveloperSignalR = function () {
+	//	self.developerHub.server.addDeveloper(ko.toJS(self.currentDeveloper()));
+	//}
 }
 
 // Bind up the view model

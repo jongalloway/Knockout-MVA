@@ -44,7 +44,7 @@
         <div class="row">
             <!-- developer form-->
             <div class="col-sm-6">
-                <form data-bind="submit: saveDeveloper" class="form-horizontal">
+                <form data-bind="submit: saveDeveloperSignalR" class="form-horizontal">
                     <div class="form-group">
                         <label class="col-md-3 control-label">First name:</label>
                         <div class="col-md-9">
@@ -94,6 +94,11 @@
     </div>
     <script src="Scripts/jquery-2.1.4.js"></script>
     <script src="Scripts/knockout-3.3.0.js"></script>
+
+	<script src="Scripts/jquery-2.1.4.min.js"></script>
+	<script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+	<script src="//localhost:55555/signalr/hubs"></script>
+
     <script src="Scripts/models.js"></script>
     <script src="Scripts/site.js"></script>
 

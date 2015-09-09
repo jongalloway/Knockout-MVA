@@ -7,6 +7,7 @@
 	<link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -37,57 +38,69 @@
 
 	<div class="container">
 		<div class="row">
-			<!-- developer form-->
 			<div class="col-sm-6">
 
-				<form data-bind="submit: saveDeveloper" class="form-horizontal">
+				<!-- developer form-->
+				<form class="form-horizontal" data-bind="submit: saveDeveloper">
 					<div class="form-group">
 						<label class="col-md-3 control-label">First name:</label>
 						<div class="col-md-9">
-
+							
 							<input type="text" class="form-control" data-bind="value: currentDeveloper().firstName" />
+						
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Last name:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: currentDeveloper().lastName" />
+						
+								<input type="text" class="form-control" data-bind="value: currentDeveloper().lastName" />
+						
 						</div>
 					</div>
 					<button type="submit" class="btn">Save developer</button>
 				</form>
 
-				<ul data-bind="foreach: developers" class="list-group">
-					<li class="list-group-item btn" data-bind="text: fullName, click: $root.modifyDeveloper"></li>
-				</ul>
+				<!-- Display developers -->
+				<!--<ul data-bind="foreach: developers" class="list-group">
+					<li class="list-group-item btn" data-bind="text: fullName, click:$root.modifyDeveloper"></li>
+				</ul>-->
+				<!--<ul class="list-group" data-bind="template: {name: 'developer-display', foreach: developers}">
+
+				</ul>-->
+
+				<!--<div data-bind="component: { name: 'developers-display', params: {developers: developers}}"></div>-->
+				<developers-display params="developers: developers"></developers-display>
 			</div>
 
-			<!-- bug form -->
 			<div class="col-sm-6">
-				<form data-bind="submit: saveBug, with: currentBug" class="form-horizontal">
+
+				<!-- bug form -->
+				<form class="form-horizontal">
 					<div class="form-group">
 						<label class="col-md-3 control-label">Description:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: description" />
+							<input type="text" class="form-control" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Status:</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control" data-bind="value: status" />
+							<input type="text" class="form-control" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Developer:</label>
 						<div class="col-md-9">
-							<select class="form-control" data-bind="options: $root.developers, optionsText: 'fullName', optionsCaption: 'Please choose a developer'"></select>
+							<select class="form-control" data-bind="options: $root.developers, optionsText: 'fullName'"></select>
 						</div>
 					</div>
 					<button type="submit" class="btn">Save bug</button>
 				</form>
 
-				<ul data-bind="foreach: bugs" class="list-group">
-					<li class="list-group-item" data-bind="text: description"></li>
+				<!-- Display Bugs-->
+				<ul class="list-group">
+					<li class="list-group-item"></li>
 				</ul>
 			</div>
 		</div>
@@ -96,5 +109,9 @@
 	<script src="Scripts/knockout-3.3.0.js"></script>
 	<script src="Scripts/models.js"></script>
 	<script src="Scripts/site.js"></script>
+
+	<script type="text/html" id="developer-display">
+		<li class="list-group-item btn" data-bind="text: fullName, click:$root.modifyDeveloper"></li>
+	</script>
 </body>
 </html>
