@@ -91,6 +91,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "M4-BugTracker", "M4-BugTrac
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services-Common", "Services-Common\Services-Common.csproj", "{A2A3ECE2-F004-4B30-B332-5AF6A9D2D9B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{9A29BA03-37C6-4228-8640-450006538DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A29BA03-37C6-4228-8640-450006538DB6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A29BA03-37C6-4228-8640-450006538DB6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A2A3ECE2-F004-4B30-B332-5AF6A9D2D9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A3ECE2-F004-4B30-B332-5AF6A9D2D9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A3ECE2-F004-4B30-B332-5AF6A9D2D9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A3ECE2-F004-4B30-B332-5AF6A9D2D9B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
